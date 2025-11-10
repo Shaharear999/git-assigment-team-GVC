@@ -2,8 +2,7 @@ class Vehicle {
 String type, colour;
 int speed, number_tyres;
 boolean canFly, canSwim;
-
-
+// Constructor for ground vehicles
 Vehicle(String t, String c, int s, int tyres) {
     type = t;
     colour = c;
@@ -24,14 +23,13 @@ Vehicle(String t, String c, int s, int tyres, boolean fly) {
     }
 
 
-Vehicle(String t, String c, int s, int tyres, boolean fly, boolean swim) {
+Vehicle(String type, String colour, int speed, int tyres, boolean float){
     type = t;
     colour = c;
     speed = s;
     number_tyres = tyres;
-    canFly = fly;
-    canSwim = swim;
-    }
+}
+
 
 void details() {
     System.out.println("Type: " + type);
@@ -59,3 +57,4 @@ public static void main(String[] args) {
     }
 
 }
+
